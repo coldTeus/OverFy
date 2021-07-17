@@ -1,0 +1,92 @@
+:root {
+    /* colors */
+    --color-primary: #0E2844;
+    --color-secondary: #ff6525;
+    --color-white: #FAFAFA;
+
+    /* typography */
+    font-size: 10px;
+    --sd-font-size: 2rem;
+    --medium-font-size: 2.5rem;
+    --big-font-size: 3rem;
+}
+
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS global */
+body {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    font-family: 'Quicksand', sans-serif;
+    background: var(--color-primary);
+    color: var(--color-primary);
+}
+
+input {
+    outline: none;
+}
+
+label {
+    display: block;
+}
+
+/* container */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* checkout-container */
+.checkout-container {
+    width: 60%;
+    padding: 5rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* congratulations-and-play-type */
+.congratulations-and-plan-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.congratulations-and-plan-type h1 {
+    font-size: var(--big-font-size);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* plan-type */
+.plan-type {
+    margin: 2.5rem 0;
+    background-color: var(--color-secondary);
+    border-radius: 1rem;
+}
+
+.plan-type p {
+    font-size: var(--medium-font-size);
+    font-weight: 600;
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+/* form-container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
